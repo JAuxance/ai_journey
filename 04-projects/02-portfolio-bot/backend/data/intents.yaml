@@ -1,0 +1,53 @@
+# intents.yaml
+#
+# Training utterances grouped by intent.
+# Target: ~30 examples per intent, balanced (+- 5 between classes).
+# All examples in English. Mix lengths, registers, and forms.
+#
+# Tip: write as 4 different visitors would — recruiter, dev, admission officer, casual peer.
+
+intents:
+
+  # Opening / first contact.
+  greet:
+    # TODO: ~30 examples like "hi", "hey there", "yo", etc.
+
+  # Who Auxance is, his background (PROFESSIONAL / IDENTITY only — strict scope).
+  # Personal questions (relationships, religion, hobbies, favorite movie, city) -> out_of_scope.
+  about_him:
+    # TODO: ~30 examples like "who are you", "tell me about yourself", "what's your background"
+
+  # What he is learning / focusing on right now (Day 42, linalg, ai-journey current phase).
+  current_focus:
+    # TODO: ~30 examples like "what are you working on", "current focus", "what are you learning"
+
+  # The long-term picture: why AI, target school, the journey, motivation.
+  ai_journey:
+    # TODO: ~30 examples like "why AI", "what's your goal", "where are you headed"
+
+  # Concrete things he has built: Manager, ai-journey, this bot.
+  projects:
+    # TODO: ~30 examples like "what have you built", "show me your work", "any projects"
+
+  # Technical skills: languages, frameworks, tools he actually knows.
+  skills_tech:
+    # TODO: ~30 examples like "what tech do you know", "do you code Python", "your stack"
+
+  # How to reach him: email, GitHub, LinkedIn.
+  contact:
+    # TODO: ~30 examples like "how do I reach you", "email", "where can I find your code"
+
+  # Catch-all for everything outside the 9 trained intents.
+  # COVER 12 CATEGORIES (see README / chat guide):
+  # weather/time, math/calc, code requests, creative, news/politics,
+  # meta-AI ("are you ChatGPT"), insults/spam, ultra-short ambiguous,
+  # gibberish, personal off-scope, action requests, translation/linguistic.
+  out_of_scope:
+    # meteometerological
+  # Closing politeness after an answer.
+  thanks:
+    # TODO: ~20-30 examples like "thanks", "cheers", "appreciate it"
+
+  # End of conversation.
+  goodbye:
+    # TODO: ~20-30 examples like "bye", "talk later", "I'm done"

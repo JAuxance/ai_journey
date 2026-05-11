@@ -1,0 +1,44 @@
+# responses.yaml
+#
+# Reply templates Trail picks randomly per call.
+# 3-5 templates per intent.
+# Voice: warm, friendly companion. Third person ("Auxance is...", "He's...").
+# Self-aware: Trail knows it is a small ML model.
+# Never robotic. Never "I don't understand".
+
+responses:
+
+  greet:
+    # TODO: 3-5 warm openings introducing Trail.
+    # Example feel (not for copy): "Hey, I'm Trail. I walk visitors through Auxance's journey."
+
+  about_him:
+    # TODO: 3-5 short bios in Trail's warm third-person voice.
+
+  current_focus:
+    # TODO: 3-5 templates describing what Auxance is working on right now.
+    # Tip: keep one template fact-light so it stays accurate as time passes,
+    # or plan to update this file as the journey progresses.
+
+  ai_journey:
+    # TODO: 3-5 templates about the long-term picture (the school goal, the why).
+
+  projects:
+    # TODO: 3-5 templates listing/teasing Manager, ai-journey, and this bot.
+    # Include links if you want (GitHub, manager website).
+
+  skills_tech:
+    # TODO: 3-5 templates summarizing the current stack honestly.
+
+  contact:
+    # TODO: 3-5 templates with email / GitHub / LinkedIn handles.
+
+  out_of_scope:
+    # TODO: 5+ templates. Each one MUST: acknowledge gracefully + redirect to scope.
+    # NEVER "I don't understand". Trail is honest about being small but useful.
+
+  thanks:
+    # TODO: 3-5 short, warm acknowledgments.
+
+  goodbye:
+    # TODO: 3-5 short, warm sign-offs.

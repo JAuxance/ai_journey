@@ -43,6 +43,7 @@ Linear Algebra ████████░░ 70%
 - [x] First ML project: Student Performance Predictor
 - [x] Project documentation written
 - [x] Weekly learning log started
+- [ ] Second project: Portfolio Bot ("Trail") - in design
 
 ## Math for AI milestones [ ]
 - [ ] Complete linear algebra foundations

@@ -6,7 +6,7 @@ This section contains end-to-end portfolio projects built to practice the full m
 
 ## Content
 
-### Student Performance Predictor
+### Student Performance Predictor (01)
 
 Folder: `01-student-performance-predictor/`
 
@@ -55,3 +55,25 @@ Reusable modules that mirror the notebook workflow:
 **Conclusion**
 
 `LinearRegression` is a strong baseline for this dataset. The two encoding strategies produce nearly identical scores, suggesting the model captures mostly linear structure from the available features. Preprocessing choices matter, but the gap between strategies is small in a controlled comparison.
+
+---
+
+### Portfolio Bot - "Trail" (02)
+
+Folder: `02-portfolio-bot/`
+
+**Status:** in design (started 2026-05-11).
+
+A handcrafted NLP chatbot built to replace the traditional portfolio website.
+The chat **is** the home page — visitors discover who I am, what I'm learning,
+and what I've built through conversation.
+
+**V1 stack**
+
+- Frontend: HTML + CSS + JS (vanilla)
+- Backend: Python + FastAPI
+- Model: scikit-learn (TF-IDF + LogisticRegression), 10 intents, hand-written dataset
+
+**V1 scope:** 8 product intents + `thanks` + `goodbye` (10 classes total). English only. Text replies only. Persona "Trail", warm companion voice.
+
+**Roadmap inside the project README.** Each future phase (word embeddings, then a small PyTorch model) ships into the same live product, so the portfolio grows alongside the skills it advertises.

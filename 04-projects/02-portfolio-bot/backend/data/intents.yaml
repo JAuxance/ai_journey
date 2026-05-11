@@ -43,7 +43,37 @@ intents:
   # meta-AI ("are you ChatGPT"), insults/spam, ultra-short ambiguous,
   # gibberish, personal off-scope, action requests, translation/linguistic.
   out_of_scope:
-    # meteometerological
+    # meteo
+    - "what's the weather"
+    - "is it sunny today"
+    - "do I need an umbrella"
+    - "what time is it"
+    - "what's the date"
+    - "what's the time in Tokyo"
+    - "is it morning or evening"
+    # awkward
+    - "test"
+    - "hello??"
+    - "can you understand me"
+    - "are you there"
+    # math
+    - "what's 2+2"
+    - "what's the square root of 16"
+    - "what's 10 divided by 2"
+    # code
+    - "write me a Python function that adds two numbers"
+    - "show me how to use React"
+    - "can you code a website for me"
+    # creative
+    - "write a poem about the sea"
+    - "tell me a joke"
+    - "can you draw a cat"
+    # news/politics
+    - "what's the latest news"
+    - "who's the president of the US"
+    - "what's your opinion on climate change"
+    # meta-AI
+    - "are you ChatGPT"
   # Closing politeness after an answer.
   thanks:
     # TODO: ~20-30 examples like "thanks", "cheers", "appreciate it"

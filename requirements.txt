@@ -2,6 +2,13 @@ numpy
 pandas
 matplotlib
 scikit-learn
+joblib
 pytest
 black
 ruff
+
+# 04-projects/02-portfolio-bot
+fastapi
+uvicorn[standard]
+pyyaml
+jupyterlab

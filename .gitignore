@@ -64,3 +64,6 @@ pip-wheel-metadata/
 01-math-for-ai/linear-algebra/Stanford_cs229-linalg_comm.pdf
 01-math-for-ai/linear-algebra/SYNTHESE.md
 CLAUDE.md
+
+# Portfolio-bot: external dataset samples kept for reference, not for training
+04-projects/02-portfolio-bot/backend/data/_inspiration/

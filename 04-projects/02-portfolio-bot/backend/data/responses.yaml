@@ -7,40 +7,36 @@
 # Never robotic. Never "I don't understand".
 
 
-# keep it 
-    - "im currently focused on passing the Holberton curriculum and building projects to learn and show my skills"
-    - "right now I'm working on the ai-journey project, which is a personal learning and growth tracker for my AI journey"
-    - "I'm also learning linear algebra, which is essential for understanding how AI models work"
-    - "my current focus is on building a strong foundation in programming and AI concepts, while also creating projects that demonstrate my skills and passion for the field"
-    - "Next year, I plan to apply to pass my Bachelor's in  free candidate,  go to Paul Sabatier for pass my master's  degree, and go to Shanghai Jiao Tong University for a Doctorate in AI"
-    - "I currently learn chinese, which is a great language and will be useful for my future studies and career in China"
-    - "I also learn english, which is important for communicating in the global AI community and accessing a wide range of resources and opportunities"
-    ------
-    - "18yo student at Holberton School"
-    - "from France, living in France"
-    - "passionate about AI and software engineering"
-    - "i dont have a lot of experience yet but I'm learning fast"
-    - "I started programming a year ago and I love it"
-    - "my goal is to become a student at SJTU and work in AI research"
-
-
-    
 responses:
 
   greet:
     # TODO: 3-5 warm openings introducing Trail.
     # Example feel (not for copy): "Hey, I'm Trail. I walk visitors through Auxance's journey."
+    - "Hi there! I'm Trail, your friendly guide to Auxance's AI journey. Ask me anything about his projects, skills, or goals!"
+    - "Hello! I'm Trail, here to share all about Auxance's exciting adventure in AI. What would you like to know?"
+    - "Hey! I'm Trail, your companion on Auxance's path to mastering AI. Feel free to ask me about his projects, skills, or what he's up to!"
+    - "Greetings! I'm Trail, your helpful guide through Auxance's AI journey. What can I tell you about him today?"
+    - "Ni hao! I'm Trail, here to walk you through Auxance's AI journey. Ask me anything about his projects, skills, or future plans!"
 
   about_him:
-    # TODO: 3-5 short bios in Trail's warm third-person voice.
+    - "Auxance is an 18-year-old student at Holberton School in France. He's passionate about AI and software engineering, and even though he only started programming about a year ago, he's moving fast."
+    - "He's 18, French, and a student at Holberton. Software and AI are what he's chasing — he picked up programming a year ago and hasn't stopped since."
+    - "Auxance is at Holberton School in France, 18 years old. Newer to coding than most (about a year in), but he's all-in on AI and software engineering."
+    - "He's a French student at Holberton, 18, deeply into AI and software. He'll be the first to admit his experience is short — but his pace and his direction are clear."
 
   current_focus:
-    # TODO: 3-5 templates describing what Auxance is working on right now.
     # Tip: keep one template fact-light so it stays accurate as time passes,
     # or plan to update this file as the journey progresses.
+    - "Right now, Auxance is focused on the Holberton curriculum and his ai-journey project — a personal tracker that documents his AI learning. He's also grinding linear algebra to nail the math foundation AI needs."
+    - "He's juggling a few things: Holberton coursework, the ai-journey repo (his learning tracker), and linear algebra. On the side he's picking up Chinese (for the SJTU goal) and sharpening his English."
+    - "His current focus is to pass Holberton, push the ai-journey project forward, and build a solid base in programming and AI fundamentals — math included."
+    - "These days he's heads-down on Holberton, building projects to show what he's learning, and studying linear algebra. The ai-journey repo is the central piece."
 
   ai_journey:
-    # TODO: 3-5 templates about the long-term picture (the school goal, the why).
+    - "The long game: Auxance wants to validate his Bachelor's as a free candidate next year, then do his Master's at Paul Sabatier, and finish with a PhD in AI at Shanghai Jiao Tong University (SJTU)."
+    - "He's aiming for AI research — specifically a PhD at SJTU in Shanghai. The route there: Bachelor's (free candidate) → Master's at Paul Sabatier → Doctorate at SJTU. That's why he's already learning Chinese."
+    - "Auxance's long-term goal is to become a student at SJTU and work in AI research. The plan to get there: free-candidate Bachelor's, then Master's at Paul Sabatier, then PhD at SJTU."
+    - "Why all this? Because AI research is what he wants to do. School plan: free-candidate Bachelor's, then Paul Sabatier for the Master's, then a PhD at Shanghai Jiao Tong University. Yes, it's ambitious — and he knows."
 
   projects:
     # TODO: 3-5 templates listing/teasing Manager, ai-journey, and this bot.

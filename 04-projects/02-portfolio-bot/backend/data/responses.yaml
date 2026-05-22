@@ -39,21 +39,48 @@ responses:
     - "Why all this? Because AI research is what he wants to do. School plan: free-candidate Bachelor's, then Paul Sabatier for the Master's, then a PhD at Shanghai Jiao Tong University. Yes, it's ambitious — and he knows."
 
   projects:
-    # TODO: 3-5 templates listing/teasing Manager, ai-journey, and this bot.
-    # Include links if you want (GitHub, manager website).
+    # 3 templates listing Manager, ai-journey, and this bot (Trail).
+    # Add links here later if you want (GitHub, manager website).
+    - "Auxance has a few projects cooking! There's Manager, a tool to help people manage their time and tasks. Then there's ai-journey, which is his personal tracker of his AI learning. And of course, this bot — Trail — which is here to share all about his journey with you!"
+    - "He's shipped a few things worth mentioning. Manager is his productivity tool for time and task management. ai-journey is a public repo where he documents his AI learning day by day, and Trail — me — is the latest one, a handcrafted chatbot that doubles as his portfolio."
+    - "Three projects worth knowing about: Manager (a time and task management tool he built and shipped), ai-journey (his public AI learning tracker, where this bot actually lives), and Trail itself — the chatbot you're chatting with right now, built from scratch without an AI code assistant."
 
   skills_tech:
-    # TODO: 3-5 templates summarizing the current stack honestly.
+    # 3 templates summarizing the current stack honestly (humble + lucid is on brand for Trail).
+    - "When it comes to tech, he's mainly using Python — it's his go-to for projects and AI work. He's also learning C to round out his programming skills. For AI, he's exploring libraries like [TensorFlow, pytorch(soon)], numpy, pandas, and matplotlib, while also strengthening his math foundation with linear algebra."
+    - "To be straight with you: his real comfort zone is Python. He won't pretend to be a polyglot — it's the language he actually thinks in. Around it, the ML library ecosystem (numpy, pandas, matplotlib, scikit-learn) and he's starting to dig into TensorFlow, with PyTorch on the short list. C he's learning at Holberton."
+    - "He hand-builds the parts that matter to his journey: Python code, the ML pipeline, this bot's backend. For front-end, he's pragmatic — he leans on AI assistants to ship UIs faster, because interface isn't where he wants to spend his time. The work that gets him to his goal is the work he does by hand."
 
   contact:
-    # TODO: 3-5 templates with email / GitHub / LinkedIn handles.
+    # 5 templates with email / GitHub / LinkedIn handles, different registers.
+    - "If you want to reach out, you can find him on GitHub at [https://github.com/JAuxance], connect on LinkedIn at [https://www.linkedin.com/in/auxance-jourdan-pro], or shoot an email to [jauxance@gmail.com]. He's always open to chatting about AI, projects, or just sharing the journey!"
+    - "Easiest ways to reach him: email — [jauxance@gmail.com], GitHub — [https://github.com/JAuxance], LinkedIn — [https://www.linkedin.com/in/auxance-jourdan-pro]. Pick the one that suits you."
+    - "If you're a recruiter, an admissions officer, or just curious about his work, the best route is usually email: [jauxance@gmail.com]. For his code, head to GitHub ([https://github.com/JAuxance]). For the professional side, LinkedIn: [https://www.linkedin.com/in/auxance-jourdan-pro]. He reads everything."
+    - "Wanna message him? Email's the most reliable way: [jauxance@gmail.com]. He's also active on GitHub ([https://github.com/JAuxance]) where his projects live, and on LinkedIn ([https://www.linkedin.com/in/auxance-jourdan-pro]) for anything more pro."
+    - "Three channels, depending on what you want. For a quick message: [jauxance@gmail.com]. For his code and learning logs: [https://github.com/JAuxance]. For professional inquiries: [https://www.linkedin.com/in/auxance-jourdan-pro]. He's responsive on all three."
 
   out_of_scope:
-    # TODO: 5+ templates. Each one MUST: acknowledge gracefully + redirect to scope.
+    # 6 templates. Each one: acknowledge gracefully + redirect to scope.
     # NEVER "I don't understand". Trail is honest about being small but useful.
+    - "That's outside what I'm trained on — I'm a small model focused on Auxance's portfolio. I can tell you about his projects, his current focus, his AI journey, his skills, or how to reach him. Pick one?"
+    - "I'll be honest: that's not in my scope. I'm just a little ML model built to walk visitors through Auxance's work. Want to hear about his projects, his AI journey, or his current focus instead?"
+    - "Outside my territory. I'm here for Auxance-related questions — his background, his projects, what he's learning, how to contact him. Anything in there I can help with?"
+    - "That one I can't answer — I only know Auxance's portfolio stuff. But if you're curious about his projects, his target school (SJTU), or his current focus, I've got plenty to share."
+    - "Not my topic, sorry. I'm a small, handcrafted ML model trained on a narrow slice of life — Auxance's. Try asking about his projects, his skills, or his journey toward AI research."
+    - "I won't pretend to know that. I'm focused on Auxance's path — his work, his goals, his stack, his contact. Anything from that list?"
 
   thanks:
-    # TODO: 3-5 short, warm acknowledgments.
+    # 5 short, warm acknowledgments.
+    - "Anytime! Happy to walk you through Auxance's stuff."
+    - "You got it. Come back if you want to dig into anything else about his work."
+    - "My pleasure — that's exactly what I'm here for."
+    - "Glad I could help. Ask me about his projects or his journey anytime."
+    - "Always welcome. Got other questions about him? Just ask."
 
   goodbye:
-    # TODO: 3-5 short, warm sign-offs.
+    # 5 short, warm sign-offs.
+    - "Take care! Come back whenever you want to know more about Auxance."
+    - "See you around. Hope this gave you a good feel for his journey."
+    - "Bye! Thanks for stopping by — and good luck with whatever you're building."
+    - "Catch you later. If you want to reach out directly, his contact info's here when you need it."
+    - "Until next time! Hope you got what you came for."

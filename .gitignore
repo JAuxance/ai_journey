@@ -67,3 +67,6 @@ CLAUDE.md
 
 # Portfolio-bot: external dataset samples kept for reference, not for training
 04-projects/02-portfolio-bot/backend/data/_inspiration/
+
+# Claude Code: local day-counter state (machine-local, not synced)
+.claude/.last-day-bump

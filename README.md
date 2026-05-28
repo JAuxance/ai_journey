@@ -26,14 +26,14 @@ Build strong foundations in:
 
 ## Current focus
 
-> **Day 42 Focus -> Math for IA**
+> **Day 47 Focus -> Portfolio Bot (Trail) - ML pipeline**
 
 ```
-Linear Algebra ████████░░ 70%
+Dataset ██████████ 100%   ·   train.py ███░░░░░░░ started
 ```
 
-- Working through: `01-math-for-ai/linear-algebra/`
-- Next up: derivatives, gradients, chain rule
+- Working through: `04-projects/02-portfolio-bot/` - Phase 2 (TF-IDF + LogisticRegression, by hand)
+- Next up: train_test_split -> Pipeline -> metrics -> joblib
 
 ---
 
@@ -44,11 +44,6 @@ Linear Algebra ████████░░ 70%
 - [x] Project documentation written
 - [x] Weekly learning log started
 - [ ] Second project: Portfolio Bot ("Trail") - in design
-
-## Math for AI milestones [ ]
-- [ ] Complete linear algebra foundations
-- [ ] Complete calculus and optimization foundations
-- [ ] Complete probability and statistics foundations
 
 ## Progress log
 | Month | Focus | Status |

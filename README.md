@@ -26,7 +26,7 @@ Build strong foundations in:
 
 ## Current focus
 
-> **Day 47 Focus -> Portfolio Bot (Trail) - ML pipeline**
+> **Day 48 Focus -> Portfolio Bot (Trail) - ML pipeline**
 
 ```
 Dataset ██████████ 100%   ·   train.py ███░░░░░░░ started

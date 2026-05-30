@@ -4,18 +4,19 @@ Click in order. Each link opens what you need next.
 
 ---
 
-## 🎯 Deadline : Tuesday 2026-05-26
+## 🎯 Deadline : Tuesday 2026-06-02
 
 Goal: `train.py` runs, all core concepts (TF-IDF, multinomial LogReg, confusion matrix, cross-validation) can be explained out loud. Residual deep-math questions are OK and expected.
 
 | Day | Time | Plan |
 |-----|------|------|
-| **Sat 2026-05-23** | 2h | Video TF-IDF (Machine Learnia) + StatQuest Logistic Regression. Take notes. |
-| **Sun 2026-05-24** | 4h | Morning: 4 remaining videos (Multinomial LogReg, Confusion Matrix, Precision/Recall, Cross Validation). Afternoon: sklearn "Working with Text Data" tutorial — read + reproduce in a notebook. |
-| **Mon 2026-05-25** | 3-4h | Paper-sketch `train.py`. Code the base: load YAML → split → Pipeline → first `.fit()` + accuracy. |
-| **Tue 2026-05-26** | 2-3h | Add `classification_report`, `confusion_matrix`, `cross_val_score`, `joblib.dump`. Manual sanity-check on a few sentences. ✅ |
+| **Thu 2026-05-28** | done | ✅ Loaded `intents.yaml`, built `X` (texts) / `Y` (intent labels) in the exploration notebook. |
+| **Fri 2026-05-29** | 2-3h | Videos: TF-IDF (Machine Learnia) + StatQuest Logistic Regression + Confusion Matrix. Take notes. |
+| **Sat–Sun 2026-05-30/31** | 4h | Remaining videos (Multinomial LogReg, Precision/Recall, Cross Validation). Read sklearn text-classification tutorial + reproduce in the notebook. |
+| **Mon 2026-06-01** | 3-4h | Paper-sketch `train.py`. Code the base: load YAML → split → Pipeline → first `.fit()` + accuracy. |
+| **Tue 2026-06-02** | 2-3h | Add `classification_report`, `confusion_matrix`, `cross_val_score`, `joblib.dump`. Manual sanity-check on a few sentences. ✅ |
 
-Total: ~12h over 4 days. Skip-day = catch up the next day, don't push the deadline.
+Total: ~12h over 5 days. Skip-day = catch up the next day, don't push the deadline.
 
 ---
 
@@ -35,9 +36,10 @@ YouTube search links — pick the top result.
 
 ## Phase 2 — The killer tutorial (~45 min, read fully)
 
-7. ⭐ [sklearn — Working With Text Data](https://scikit-learn.org/stable/tutorial/text_analytics/working_with_text_data.html)
+7. ⭐ [sklearn — Classification of text documents using sparse features (current)](https://scikit-learn.org/stable/auto_examples/text/plot_document_classification_20newsgroups.html)
+   **Fallback (legacy tutorial format, longer & more pedagogical):** [sklearn 1.4 — Working With Text Data](https://scikit-learn.org/1.4/tutorial/text_analytics/working_with_text_data.html)
 
-Almost exactly this project. Read with an editor open.
+Almost exactly this project. Read with an editor open. The legacy version is more step-by-step, the current one is more concise — start with the legacy if you prefer hand-holding.
 
 ---
 

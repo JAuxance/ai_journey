@@ -108,6 +108,11 @@ intents:
     - "why AI?"
     - "making AI is his passion?"
     - "what is the list of programming languages he wants to learn"
+    - "his long-term ambition in AI research?"
+    - "his target universities is SJTU?"
+    - "why does he aim for a PhD in China rather than in France or the US?"
+    - "what's his academic plan?"
+    - "what's his motivation for doing a PhD in China?"
 
   # Concrete things he has built: Manager, ai-journey, this bot.
   projects:
@@ -176,6 +181,9 @@ intents:
     - "does he have a CV"
     - "any blog"
     - "I'm a recruiter and I'd like to discuss an opportunity with him, what's the fastest way to reach out?"
+    - "github link?"
+    - "linkedin link?"
+    - "twitter link?"
     # "send him a note from me" keep in mind j'aime bien l'idée 
 
   # Catch-all for everything outside the 9 trained intents.
@@ -241,6 +249,11 @@ intents:
     # translation / linguistic
     - "translate hello to Spanish"
     - "what does 'serendipity' mean"
+    - "explain me the concept of 'recursion'"
+    - "translate 'bonjour' to English"
+    - "what's the meaning of algorithm"
+    - "define 'antology'"
+    - "what does 'paradigm' mean"
     - "I was reading on Hacker News about how transformers scale, do you have an opinion on the latest research?"
 
   # Closing politeness after an answer.

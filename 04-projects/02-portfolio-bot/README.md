@@ -1,6 +1,11 @@
-# Project 02 - Portfolio Bot ("Trail")
+# Project 02 - Portfolio Bot ("Trail") — ML & Training
 
 > The chatbot **is** the portfolio.
+
+This folder is the **ML / training side** of Trail: dataset, training notebook,
+and learning notes. The deployed code (FastAPI backend + HTML/CSS/JS frontend)
+lives in a **separate portfolio repo** so this `ai-journey` repo stays focused
+on the learning trail.
 
 A small, handcrafted NLP chatbot that replaces the traditional portfolio website.
 Visitors land on a chat interface and discover who I am, what I'm learning,
@@ -8,68 +13,45 @@ and what I've built — through conversation, not navigation.
 
 ## Status
 
-- Phase: **V1 - in design**
-- Started: 2026-05-11
-- Approach: built by hand, no AI code assistant, learning-first.
+- **V1 frozen.** F1 macro ≈ **0.629** (5-fold cross-validation)
+- **Pipeline:** TF-IDF + LogisticRegression (scikit-learn), joblib-persisted
+- **Dataset:** 225 utterances, 10 intents, all hand-written
+- **Approach:** ML built by hand — no AI code assistant on the model side
+- **Started:** 2026-05-11
+
+## What's in this folder
+
+```
+02-portfolio-bot/
+├── README.md
+├── data/
+│   ├── intents.yaml      training utterances (the X, the labels)
+│   ├── responses.yaml    Trail's reply templates (3-6 per intent)
+│   └── _inspiration/     external dataset samples for reference (gitignored)
+├── training/
+│   ├── learning-resources.md   videos + docs + study plan for train.py
+│   ├── ml-concepts.md          concepts reference (TF-IDF, Pipeline, eval)
+│   └── heatherv1/
+│       └── heather-experiments.ipynb   full ML pipeline experiments
+└── models/                joblib outputs from experiments (gitignored)
+```
 
 ## Why this project
 
-I am 42 days into a self-directed AI journey targeting a top AI-focused
+I am 48+ days into a self-directed AI journey targeting a top AI-focused
 university. A conventional portfolio site would describe my work; this one
 **demonstrates** it. The bot itself is the proof of work.
 
 The project also gives me a long horizon to grow:
 
-- V1: classical ML stack (TF-IDF + logistic regression).
-- V2: word embeddings.
-- V3: a small PyTorch model.
+- **V1:** classical ML stack (TF-IDF + logistic regression) ← current
+- **V2:** word embeddings (planned)
+- **V3:** small PyTorch classifier (planned)
+- **V4:** small local LLM for generation (long-term)
 
-Each upgrade ships into the same live product. The portfolio improves
-in parallel with the skills it advertises.
-
-## Architecture (V1)
-
-```
-+------------------------------+
-|  Frontend (HTML/CSS/JS)      |
-|  full-page chat UI           |
-|  quick-start chips on load   |
-+--------------+---------------+
-               | POST /chat
-               v
-+------------------------------+
-|  Backend (FastAPI)           |
-|  /chat   : message -> reply  |
-|  /intents: list (debug)      |
-|  /log    : low-confidence    |
-+--------------+---------------+
-               v
-+------------------------------+
-|  Intent classifier (sklearn) |
-|  TF-IDF (word + char n-gram) |
-|  LogisticRegression          |
-|  joblib-serialized           |
-|  confidence threshold        |
-+--------------+---------------+
-               v
-+------------------------------+
-|  Response policy             |
-|  YAML: intent -> templates   |
-|  random pick per call        |
-+------------------------------+
-```
-
-All persistent artifacts (model, logs, datasets) live on disk. No external
-database needed for V1.
-
-## Stack
-
-| Layer    | Choice                  | Why |
-|----------|-------------------------|-----|
-| Frontend | HTML + CSS + JS vanilla | Fundamentals over frameworks. Migrate to React later if needed. |
-| Backend  | Python + FastAPI        | Same language as the ML stack, modern async, auto OpenAPI docs. |
-| ML       | scikit-learn            | Already comfortable, transparent, fast to iterate. |
-| Storage  | YAML + joblib + JSON logs | No DB needed. Everything is text and reviewable. |
+Each upgrade is built and measured here, then the artifact ships to the
+production repo. The portfolio improves in parallel with the skills it
+advertises.
 
 ## V1 scope - 10 intents
 
@@ -78,8 +60,8 @@ database needed for V1.
 | # | Intent           | Purpose                                          |
 |---|------------------|--------------------------------------------------|
 | 1 | greet            | "hi", "hey", "yo"                                |
-| 2 | about_him        | who I am, my background                          |
-| 3 | current_focus    | what I am learning right now (Day, topic)        |
+| 2 | about_him        | who I am, my background (present)                |
+| 3 | current_focus    | what I am learning right now                     |
 | 4 | ai_journey       | long-term goal, school target, motivation        |
 | 5 | projects         | Manager, ai-journey, this bot                    |
 | 6 | skills_tech      | languages, tools, what I can actually do         |
@@ -88,65 +70,41 @@ database needed for V1.
 | 9 | thanks           | "thanks", "cheers"                               |
 |10 | goodbye          | "bye", "talk later"                              |
 
-Target dataset size: ~30 examples per intent = ~300 total. Hand-written.
-
 ## Persona - Trail
 
-- Name: **Trail**.
-- Voice: warm, friendly companion. Third person ("Auxance is…", "He's…").
-- Tone: humble, curious, calmly confident. Never corporate.
-- Self-aware: Trail knows it is a small ML model and says so when relevant.
-- Signature opener (placeholder): "Hey, I'm Trail. I walk visitors through Auxance's journey. What would you like to know?"
+- **Name:** Trail
+- **Voice:** warm, friendly companion. Third person ("Auxance is…", "He's…")
+- **Tone:** humble, curious, calmly confident. Never corporate.
+- **Self-aware:** Trail knows it is a small ML model and says so when relevant.
+- **Signature opener:** *"Hey, I'm Trail. I walk visitors through Auxance's journey. What would you like to know?"*
 
-## Phase plan
+## How the dataset works (POV system)
 
-| Phase | Goal                                                  | New concepts learned                          |
-|-------|-------------------------------------------------------|-----------------------------------------------|
-| 0     | Skeleton: FastAPI hello + static frontend + CORS + wire end-to-end | client/server, HTTP, JSON, async Python      |
-| 1     | Dataset: write intents.yaml + responses.yaml          | annotation discipline, dataset balance        |
-| 2     | ML pipeline: TF-IDF + LogReg, train + eval + persist  | text vectorization, evaluation, confusion matrix |
-| 3     | Integration: load model in API, /chat route, confidence threshold, out_of_scope routing | model serving, threshold tuning   |
-| 4     | Polish: /log endpoint, quick-start chips, fallback link | continuous improvement loop, UX of chat       |
-| 5+    | Upgrades: word embeddings -> PyTorch classifier       | aligned with later phases of the AI roadmap   |
+The classifier learns `text → intent`. Inside the data:
 
-## Folder structure (target)
+- **`I` / `me`** → the visitor (asking questions)
+- **`he` / `his`** → Auxance (subject of the conversation)
+- **`you`** → Trail (the bot being addressed)
 
-```
-02-portfolio-bot/
-|-- README.md
-|-- backend/
-|   |-- app/
-|   |   |-- main.py          FastAPI app and routes
-|   |   |-- classifier.py    model loading + predict
-|   |   |-- policy.py        intent -> response selection
-|   |   `-- schemas.py       Pydantic request/response
-|   |-- data/
-|   |   |-- intents.yaml     intent -> list of training utterances
-|   |   `-- responses.yaml   intent -> list of reply templates
-|   |-- training/
-|   |   |-- train.py
-|   |   |-- evaluate.py
-|   |   `-- notebook.ipynb   exploration + plots
-|   |-- models/              trained joblib artifacts (gitignored)
-|   `-- logs/                low-confidence message logs (gitignored)
-`-- frontend/
-    |-- index.html
-    |-- styles.css
-    `-- chat.js
-```
+So a training utterance is what a visitor types **to Trail**, asking **about Auxance**.
+
+`intents.yaml` = the X + y (visitor utterances + their intent label).
+`responses.yaml` = the lookup table the policy uses after the classifier predicts.
 
 ## Decisions log
 
-| Date       | Decision                                          | Reason                                  |
-|------------|---------------------------------------------------|-----------------------------------------|
-| 2026-05-11 | Ambition V1 = rules + intent classifier           | Matches current skill (sklearn). Clear path to upgrade. |
-| 2026-05-11 | English only for V1                               | Cleaner training set, target audience.  |
-| 2026-05-11 | Text replies only (no tool calling)               | Keeps the ML problem honest.            |
-| 2026-05-11 | The bot IS the portfolio (not a sidekick)         | Show, don't tell.                       |
-| 2026-05-11 | 10 intents (8 + thanks + goodbye)                 | Compact dataset, expressive enough.     |
-| 2026-05-11 | Persona "Trail", warm companion, third person     | Friendly without being cute.            |
+| Date       | Decision                                                  | Reason |
+|------------|-----------------------------------------------------------|--------|
+| 2026-05-11 | Ambition V1 = rules + intent classifier                   | Matches current skill (sklearn). Clear path to upgrade. |
+| 2026-05-11 | English only for V1                                       | Cleaner training set, target audience. |
+| 2026-05-11 | Text replies only (no tool calling)                       | Keeps the ML problem honest. |
+| 2026-05-11 | The bot IS the portfolio (not a sidekick)                 | Show, don't tell. |
+| 2026-05-11 | 10 intents (8 + thanks + goodbye)                         | Compact dataset, expressive enough. |
+| 2026-05-11 | Persona "Trail", warm companion, third person             | Friendly without being cute. |
+| 2026-05-29 | Split repo: ML stays in ai-journey, deployed code in portfolio repo | Keeps ai-journey learning-focused; portfolio repo owns deployment. |
+| 2026-05-29 | V1 frozen at F1 macro 0.629                               | TF-IDF plateau on 225 examples / 10 classes. V2 needs embeddings. |
 
-## Rules I'm holding myself to (from the journey's root README)
+## Rules I hold myself to (from the journey's root README)
 
 - Code clean and documented.
 - Every project includes results and conclusions.

@@ -205,6 +205,12 @@ intents:
     - "write me a Python function that adds two numbers"
     - "show me how to use React"
     - "can you code a website for me"
+    - "i want you to write a function?"
+    - "lets debug this code"
+    - "explain how to code an API"
+    - "can you write a SQL query to select all users from a database"
+    - "write a Python script"
+    - "correct this code for me"
     # creative
     - "write a poem about the sea"
     - "tell me a joke"

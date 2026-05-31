@@ -26,10 +26,10 @@ Build strong foundations in:
 
 ## Current focus
 
-> **Day 49 Focus -> Portfolio Bot (Trail) - ML pipeline**
+> **Day 50 Focus -> Portfolio Bot (Trail) - ML pipeline**
 
 ```
-Dataset ██████████ 100%   ·   train.py ███░░░░░░░ started
+Dataset ██████████ 100%   ·   train.py ██████████ started
 ```
 
 - Working through: `04-projects/02-portfolio-bot/` - Phase 2 (TF-IDF + LogisticRegression, by hand)

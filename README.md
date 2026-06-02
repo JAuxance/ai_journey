@@ -26,14 +26,15 @@ Build strong foundations in:
 
 ## Current focus
 
-> **Day 50 Focus -> Portfolio Bot (Trail) - ML pipeline**
+> **Day 51 Focus -> Portfolio Bot (Trail) - integration**
 
 ```
-Dataset ██████████ 100%   ·   train.py ██████████ started
+Dataset ██████████ 100%   ·   train.py ██████████ done   ·   integration ░░░░░░░░░░ next
 ```
 
-- Working through: `04-projects/02-portfolio-bot/` - Phase 2 (TF-IDF + LogisticRegression, by hand)
-- Next up: train_test_split -> Pipeline -> metrics -> joblib
+- V1 model trained by hand: TF-IDF + LogisticRegression, F1 macro 0.629 (5-fold CV)
+- `train.py` ships `intent_classifier.joblib` from `04-projects/02-portfolio-bot/`
+- Next up: load model in FastAPI, response policy, confidence threshold, wire to frontend
 
 ---
 
@@ -43,7 +44,7 @@ Dataset ██████████ 100%   ·   train.py ██████�
 - [x] First ML project: Student Performance Predictor
 - [x] Project documentation written
 - [x] Weekly learning log started
-- [ ] Second project: Portfolio Bot ("Trail") - in design
+- [ ] Second project: Portfolio Bot ("Trail") - V1 model trained, integration in progress
 
 ## Progress log
 | Month | Focus | Status |

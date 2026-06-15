@@ -70,3 +70,6 @@ CLAUDE.md
 
 # Claude Code: local day-counter state (machine-local, not synced)
 .claude/.last-day-bump
+
+# OS trash folders
+.Trash-*

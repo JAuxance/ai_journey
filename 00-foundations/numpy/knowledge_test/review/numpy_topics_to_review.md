@@ -1,21 +1,21 @@
-# NumPy - Points a revoir
+# NumPy - Topics to review
 
-## Priorite haute
+## High priority
 
-- Syntaxe des masques booleens : `tab[condition]`
-- Difference entre `axis=0` et `axis=1`
-- Repondre exactement a la question quand on demande une valeur unique comme `a[0, 0]`
+- Boolean mask syntax: `tab[condition]`
+- Difference between `axis=0` and `axis=1`
+- Answer exactly the question when a single value is requested, such as `a[0, 0]`
 
-## Syntaxe a securiser
+## Syntax to secure
 
-- `np.linspace(...)` et non `np.linespace(...)`
-- `np.ones(3, dtype=np.int64)` avec le prefixe `np.`
-- Verifier le nombre d'elements avant un `reshape`
+- `np.linspace(...)` not `np.linespace(...)`
+- `np.ones(3, dtype=np.int64)` with the `np.` prefix
+- Verify the number of elements before a `reshape`
 
-## Notions a reviser
+## Concepts to revisit
 
-- `np.nonzero(...)` pour trouver une position
-- `np.unique(tab, return_index=True)` pour recuperer les valeurs uniques et leur premiere position
-- `np.flip(tab, axis=1)` pour inverser l'ordre des colonnes
-- `.T` pour transposer une matrice
-- `np.hsplit(...)` pour decouper selon les colonnes
+- `np.nonzero(...)` to find a position
+- `np.unique(tab, return_index=True)` to get unique values and their first position
+- `np.flip(tab, axis=1)` to reverse the column order
+- `.T` to transpose a matrix
+- `np.hsplit(...)` to split along columns

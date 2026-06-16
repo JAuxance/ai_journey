@@ -184,7 +184,7 @@ intents:
     - "github link?"
     - "linkedin link?"
     - "twitter link?"
-    # "send him a note from me" keep in mind j'aime bien l'idée 
+    # "send him a note from me" keep in mind
 
   # Catch-all for everything outside the 9 trained intents.
   # COVER 12 CATEGORIES (see README / chat guide):

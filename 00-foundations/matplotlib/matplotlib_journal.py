@@ -173,7 +173,7 @@ def heatmap_section():
     plt.colorbar()
     plt.xticks(range(len(corr)), corr.columns, rotation=45, ha="right")
     plt.yticks(range(len(corr)), corr.columns)
-    plt.title("Heatmap corrélation stats Pokémon")
+    plt.title("Heatmap correlation Pokémon stats")
     plt.tight_layout()
     # plt.savefig("figures/heatmap_chart.png")
     plt.show()

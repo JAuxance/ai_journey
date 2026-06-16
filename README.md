@@ -10,7 +10,7 @@ for **SJTU**), built by hand with the goal of **understanding**, not just shippi
 
 ## Current focus
 
-> **Day 55 Focus -> Portfolio Bot (Trail) - V2 embeddings**
+> **Day 56 Focus -> Portfolio Bot (Trail) - V2 embeddings**
 
 ```
 V1 (TF-IDF) ██████████ frozen at F1 0.629   ·   V2 (embeddings) ░░░░░░░░░░ studying

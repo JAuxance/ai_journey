@@ -4,6 +4,7 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
     container_name: ai-journey
+    user: "1000:1000"
     working_dir: /workspace
     ports:
       - "8888:8888"
@@ -11,6 +12,7 @@ services:
       - ..:/workspace
     environment:
       PYTHONPATH: /workspace
+      HOME: /tmp
     tty: true
     stdin_open: true
     restart: unless-stopped
@@ -20,11 +22,13 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
     container_name: ai-journey-pipeline
+    user: "1000:1000"
     volumes:
       - ..:/workspace
     working_dir: /workspace/04-projects/01-student-performance-predictor
     environment:
       PYTHONPATH: /workspace
+      HOME: /tmp
     command: python src/main.py
     profiles:
       - pipeline
@@ -34,11 +38,13 @@ services:
       context: ..
       dockerfile: docker/Dockerfile
     container_name: ai-journey-tests
+    user: "1000:1000"
     volumes:
       - ..:/workspace
     working_dir: /workspace
     environment:
       PYTHONPATH: /workspace
+      HOME: /tmp
     command: pytest
     profiles:
       - test

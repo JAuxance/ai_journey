@@ -23,7 +23,7 @@ This folder contains finished, production-ready projects. Each project demonstra
 **Goal**: Interactive chatbot serving as my portfolio. Visitors chat with a hand-coded model to discover my work.
 
 **Current state**:
-- **V1 (Prod)**: TF-IDF + Logistic Regression (F1: 0.629) ✅
-- **V2 (WIP)**: Upgrading to Sentence Embeddings (Target F1 > 0.80) 🔄
+- **V1 (Prod)**: TF-IDF + Logistic Regression (F1: 0.629) 
+- **V2 (WIP)**: Upgrading to Sentence Embeddings (Target F1 > 0.80) 
 
-📄 [Full details →](./02-portfolio-bot/README.md)
+ [Full details →](./02-portfolio-bot/README.md)

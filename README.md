@@ -25,8 +25,8 @@ V1 (TF-IDF) ██████████ frozen at F1 0.629   ·   V2 (embeddi
 ### [Portfolio Bot "Trail"](./4-models_released/02-portfolio-bot) 
 Interactive chatbot serving as my portfolio. Visitors chat with a hand-coded model to discover my work.
 
-- **V1 (Prod)**: TF-IDF + Logistic Regression (F1: 0.629) ✅
-- **V2 (WIP)**: Upgrading to Sentence Embeddings (Target F1 > 0.80) 🔄
+- **V1 (Prod)**: TF-IDF + Logistic Regression (F1: 0.629) 
+- **V2 (WIP)**: Upgrading to Sentence Embeddings (Target F1 > 0.80) 
 
 **Structure**: 
 - [`data/`](./4-models_released/02-portfolio-bot/data) — Knowledge base (`intents.yaml`, `responses.yaml`)
@@ -34,7 +34,7 @@ Interactive chatbot serving as my portfolio. Visitors chat with a hand-coded mod
 - [`models/`](./4-models_released/02-portfolio-bot/models) — Serialized artifacts (`.joblib`)
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 This repo follows a strict progression to avoid cognitive debt:
 

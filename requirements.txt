@@ -6,6 +6,8 @@ joblib
 pytest
 black
 ruff
+sentence-transformers
+ipywidgets
 
 # 04-projects/02-portfolio-bot
 fastapi

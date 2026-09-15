@@ -1,4 +1,3 @@
-⏸️ PAUSED | RNCP 5 (August -> November) |
 # AI Journey
 Target: portfolio strong enough for a top AI-focused university (currently aiming
 for **SJTU**), built by hand with the goal of **understanding**, not just shipping.

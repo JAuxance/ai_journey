@@ -3,7 +3,7 @@ services:
     build:
       context: ..
       dockerfile: docker/Dockerfile
-    container_name: ai-journey
+    container_name: ai_journey
     user: "1000:1000"
     working_dir: /workspace
     ports:

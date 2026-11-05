@@ -4,8 +4,8 @@ from model import Word2VecModel
 import torch.optim as optim
 
 
-word = ["men", "women", "car", "train", "stylo", "crayon", "red", "blue"]
-word_idx = {"men": 0, "women": 1, "car": 2, "train": 3, "stylo": 4, "crayon": 5, "red": 6, "blue": 7}
+word = ["men", "women", "car", "train", "pen", "pencil", "red", "blue"]
+word_idx = {"men": 0, "women": 1, "car": 2, "train": 3, "pen": 4, "pencil": 5, "red": 6, "blue": 7}
 pair_tuple = [
     (2, 3, 1),
     (6, 5, 0),

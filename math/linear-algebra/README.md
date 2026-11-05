@@ -18,3 +18,6 @@ All study notes with math and code examples are in the notebook:
 6. Matrix-Matrix Products
 7. Identity Matrix and Diagonal Matrices
 8. Transpose
+9. Symmetric Matrices
+10. Trace (with proof of `tr(AB) = tr(BA)`)
+11. Norms (ℓp family for vectors, Frobenius for matrices)

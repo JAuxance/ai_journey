@@ -25,7 +25,7 @@ services:
     user: "1000:1000"
     volumes:
       - ..:/workspace
-    working_dir: /workspace/04-projects/01-student-performance-predictor
+    working_dir: /workspace/projects/student-performance-predictor
     environment:
       PYTHONPATH: /workspace
       HOME: /tmp

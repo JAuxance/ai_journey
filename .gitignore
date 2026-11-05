@@ -61,12 +61,12 @@ pip-wheel-metadata/
 !.vscode/extensions.json
 !.vscode/launch.json
 !.vscode/tasks.json
-01-math-for-ai/linear-algebra/Stanford_cs229-linalg_comm.pdf
-01-math-for-ai/linear-algebra/SYNTHESE.md
+math/linear-algebra/Stanford_cs229-linalg_comm.pdf
+math/linear-algebra/SYNTHESE.md
 CLAUDE.md
 
 # Portfolio-bot: external dataset samples kept for reference, not for training
-04-projects/02-portfolio-bot/data/_inspiration/
+projects/portfolio-bot-trail/data/_inspiration/
 
 # Claude Code: local day-counter state (machine-local, not synced)
 .claude/.last-day-bump

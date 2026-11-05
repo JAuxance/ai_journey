@@ -10,7 +10,7 @@ ruff
 sentence-transformers
 ipywidgets
 
-# 04-projects/02-portfolio-bot
+# projects/portfolio-bot-trail
 fastapi
 uvicorn[standard]
 pyyaml

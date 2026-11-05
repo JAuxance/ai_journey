@@ -1,4 +1,4 @@
-# Project 02 - Portfolio Bot ("Trail") — ML & Training
+# Portfolio Bot ("Trail") — ML & Training
 
 > The chatbot **is** the portfolio.
 
@@ -13,27 +13,34 @@ and what I've built — through conversation, not navigation.
 
 ## Status
 
+> **PAUSED until January 2027.** Until the end of December 2026 the focus is
+> on `math/` and `ml-from-scratch/`, to build the foundations V2 needs.
+
 - **V1 frozen.** F1 macro ≈ **0.629** (5-fold cross-validation)
 - **Pipeline:** TF-IDF + LogisticRegression (scikit-learn), joblib-persisted
 - **Dataset:** 225 utterances, 10 intents, all hand-written
 - **Approach:** ML built by hand — no AI code assistant on the model side
+- **V2 (sentence embeddings):** first exploration notebooks only, paused
 - **Started:** 2026-05-11
 
 ## What's in this folder
 
 ```
-02-portfolio-bot/
+portfolio-bot-trail/
 ├── README.md
 ├── data/
 │   ├── intents.yaml      training utterances (the X, the labels)
 │   ├── responses.yaml    Trail's reply templates (3-6 per intent)
 │   └── _inspiration/     external dataset samples for reference (gitignored)
 ├── training/
-│   ├── learning-resources.md   videos + docs + study plan for train.py
-│   ├── ml-concepts.md          concepts reference (TF-IDF, Pipeline, eval)
-│   └── heatherv1/
-│       └── heather-experiments.ipynb   full ML pipeline experiments
-└── models/                joblib outputs from experiments (gitignored)
+│   ├── v1/
+│   │   ├── heather-experiments.ipynb   full ML pipeline experiments
+│   │   └── train.py                    trains and saves intent_classifier.joblib
+│   └── v2/
+│       ├── learning-resources.md       study plan for sentence embeddings
+│       ├── 01-embedding-basics.ipynb   (+ .py) first steps with embeddings
+│       └── 02-cosine-similarity.ipynb  cosine similarity between sentences
+└── models/                joblib outputs (gitignored)
 ```
 
 ## Why this project
@@ -44,8 +51,8 @@ university. A conventional portfolio site would describe my work; this one
 
 The project also gives me a long horizon to grow:
 
-- **V1:** classical ML stack (TF-IDF + logistic regression) ← current
-- **V2:** word embeddings (planned)
+- **V1:** classical ML stack (TF-IDF + logistic regression) ← frozen
+- **V2:** sentence embeddings (started, paused until January 2027)
 - **V3:** small PyTorch classifier (planned)
 - **V4:** small local LLM for generation (long-term)
 

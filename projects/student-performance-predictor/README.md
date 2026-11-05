@@ -9,7 +9,7 @@ Predict `Exam_Score` from tabular student data and compare preprocessing strateg
 - `src/`: reusable pipeline code for loading, preparing, training, and evaluating
 
 ## Workflow
-1. Load the dataset from `data/StudentPerformanceFactors.csv`
+1. Load the dataset from `data/StudentPerformanceFactors.csv` (not committed: `*.csv` is gitignored, download the Kaggle *Student Performance Factors* dataset into `data/`)
 2. Inspect missing values
 3. Prepare features with different encoding strategies
 4. Train a `LinearRegression` model
@@ -17,7 +17,7 @@ Predict `Exam_Score` from tabular student data and compare preprocessing strateg
 6. Compare results and summarize findings
 
 ## Notebook Comparison
-The notebook `notebooks/01_eda.ipynb` now compares two controlled preprocessing versions on the same cleaned dataset after `dropna()`.
+Two notebooks compare controlled preprocessing versions on the same cleaned dataset after `dropna()`: `notebooks/01_eda_one_hot.ipynb` (version 1) and `notebooks/02_eda_mixed_encoding.ipynb` (version 2).
 
 ### Version 1: All Dummies
 - Strategy: one-hot encode every categorical column with `drop_first=True`

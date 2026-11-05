@@ -1,4 +1,4 @@
-# 00 Foundations
+# Foundations
 
 This section covers the essential basics before moving on to machine learning.
 
@@ -31,10 +31,15 @@ Personal observations on what is understood, what still feels unclear, and the l
 
 ### NumPy Knowledge Test
 
-Folder: `numpy/knowlege_test/`
+> The test files are **no longer in the working tree**. They were removed on
+> 2026-06-16 (commits `caa0c22` and `f052352`) and can still be read from git
+> history, e.g. `git show caa0c22^:00-foundations/numpy/knowledge_test/feedback/numpy_knowledge_test_feedback.md`.
+> The results are kept below as a record.
+
+What the test contained:
 
 - `numpy_knowledge_test.md` — 20-point test covering all concepts from the journal
-- `exo.py` — code answers to the practical exercises in the test
+- `exo.py` (later `solutions.py`) — code answers to the practical exercises in the test
 - `feedback/numpy_knowledge_test_feedback.md` — full correction with per-exercise feedback (**final score: 15 / 20**)
 - `review/numpy_topics_to_review.md` — list of topics to revisit following the test
 
